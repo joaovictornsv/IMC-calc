@@ -8,19 +8,20 @@ body, button {
   font-family: 'Montserrat', 'sans-serif';
 }
 
-img.background {
-  position: fixed;
-  z-index: -1;
-  min-height: 150vh;
-  left: 40%;
-  top: -50px;
-}
-
 div.main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
+
+
+  background: url(../images/bg.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 40vw;
+  background-origin: border-box;
+  background-size: 80vw auto;
 }
 
 div.content{
@@ -64,7 +65,7 @@ div.content .info img {
 
 div.content .info .actions {
   height: 40%;
-  font-size: clamp(26px, 4vh, 4vh);
+  font-size: clamp(26px, 2vw, 2vw);
 }
 
 div.content .info .actions button {
@@ -72,7 +73,7 @@ div.content .info .actions button {
   background-color: #03C4A1;
   border: none;
   color: #fff;
-  font-size: clamp(20px, 20px, 40px);
+  font-size: clamp(20px, 30px, 40px);
   border-radius: 12px;
   cursor: pointer;
   margin-top: 25px;
@@ -86,11 +87,8 @@ div.content .info .actions button:hover {
 }
 
 @media(max-width: 750px) {
-  img.background {
-    display: none
-  }
-
   div.main {
+    background: none;
     background-color: #fff;
     height: 100vh;
     display: flex;
