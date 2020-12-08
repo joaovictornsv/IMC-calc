@@ -86,6 +86,9 @@ div.content .info .actions button:hover {
 }
 
 @media(max-width: 750px) {
+  img.background {
+    display: none
+  }
 
   div.main {
     background-color: #fff;
