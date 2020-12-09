@@ -1,13 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body, button {
-  font-family: 'Montserrat', 'sans-serif';
-}
-
 div.main {
   display: flex;
   justify-content: center;
@@ -72,7 +62,6 @@ div.content .info .actions button {
   padding: 10px 20px;
   background-color: #03C4A1;
   border: none;
-  color: #fff;
   font-size: clamp(20px, 30px, 40px);
   border-radius: 12px;
   cursor: pointer;
@@ -80,6 +69,11 @@ div.content .info .actions button {
   outline: none;
 
   transition: background-color 0.2s;
+}
+
+div.content .info .actions button a {
+  text-decoration: none;
+  color: #fff;
 }
 
 div.content .info .actions button:hover {

@@ -1,0 +1,14 @@
+:root {
+  --primary: #03C4A1;
+  --primary-dark: #05997e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, button {
+  font-family: 'Montserrat', 'sans-serif';
+}
