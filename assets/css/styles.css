@@ -65,7 +65,7 @@ div.content .info img {
 
 div.content .info .actions {
   height: 40%;
-  font-size: clamp(26px, 2vw, 2vw);
+  font-size: clamp(20px, 30px, 36px);
 }
 
 div.content .info .actions button {
@@ -89,7 +89,6 @@ div.content .info .actions button:hover {
 @media(max-width: 750px) {
   div.main {
     background: none;
-    background-color: #fff;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -103,6 +102,15 @@ div.content .info .actions button:hover {
     'info'
     'landing';
     align-items: center;
+  }
+
+  div.content .landing {
+    margin-top: 30px;
+    background: url(../images/bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: border-box;
+    background-size: auto 100%;
   }
 
   div.content .landing img {
