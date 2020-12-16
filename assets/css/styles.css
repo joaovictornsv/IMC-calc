@@ -48,7 +48,7 @@ div.content .landing img {
 div.content .info {
   grid-area: info;
   color: #03C4A1;
-  width: 90%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   justify-content:space-around;
@@ -62,7 +62,6 @@ div.content .info img {
 }
 
 div.content .info .actions {
-  height: 40%;
   font-size: clamp(20px, 30px, 36px);
 }
 
@@ -90,7 +89,6 @@ div.content .info .actions button:hover {
 
 @media(max-width: 750px) {
   div.main {
-    height: 100vh;
     display: flex;
     align-items: center;
   }
@@ -107,6 +105,8 @@ div.content .info .actions button:hover {
     'info'
     'landing';
     align-items: center;
+    align-self: flex-start;
+    margin-top: 30px;
   }
 
   div.content .landing {
@@ -119,7 +119,7 @@ div.content .info .actions button:hover {
   }
 
   div.content .landing img {
-    width: 70%
+    width: 80%
   }
 
   div.content .info {
@@ -136,11 +136,11 @@ div.content .info .actions button:hover {
   }
   div.content .info .actions {
     height: 100%;
-    font-size: 28px;
+    font-size: 20px;
   }
 
   div.content .info .actions button {
-    font-size: 32px;
+    font-size: 20px;
     padding: 10px 28px
   }
 }
