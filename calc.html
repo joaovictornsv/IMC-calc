@@ -12,28 +12,82 @@
   <title>IMC Calc</title>
 </head>
 <body>
-  <form action="" id="form">
+  <div class="main">
+    <div class="content">
+      <div class="input">
+        <p>Preencha os campos abaixo e veja seu resultado</p>
+      
+        <form action="" id="form">
 
-    <input
-      type="text" 
-      name="peso" 
-      id="peso"
-      required
-      spellcheck="false"
-      placeholder="Peso">
+          <input
+            type="text" 
+            name="peso" 
+            id="peso"
+            required
+            spellcheck="false"
+            placeholder="Peso">
 
-    <input
-      type="text"
-      name="altura"
-      id="altura"
-      required
-      spellcheck="false" placeholder="Altura">
+          <input
+            type="text"
+            name="altura"
+            id="altura"
+            required
+            spellcheck="false" placeholder="Altura">
 
 
-    <button type="submit">
-      Calcular
-    </button>
-  </form>
+          <button type="submit">
+            Calcular
+          </button>
+
+        </form>
+      </div> <!--Inputs-->
+
+      <div class="results">
+        <div class="score">
+          <span className="title">Seu IMC</span>
+          <span className="score">22.2</span>
+          <span className="status">
+            Peso Normal
+          </span>
+        </div>
+
+        <div class="table">
+          <table>
+            <tr>
+              <td>Abaixo do Peso</td>
+              <td>< 18.5</td>
+            </tr>
+
+            <tr>
+              <td>Peso Normal</td>
+              <td>18.5 - 24.9</td>
+            </tr>
+
+            <tr>
+              <td>Sobrepeso</td>
+              <td>25 - 29.9</td>
+            </tr>
+
+            <tr>
+              <td>Obesidade Grau I</td>
+              <td>30 - 34.9</td>
+            </tr>
+            
+            <tr>
+              <td>Obesidade Grau II</td>
+              <td>35 - 39.9</td>
+            </tr>
+
+            <tr>
+              <td>Obesidade Grau III ou Mórbida</td>
+              <td> >= 40</td>
+            </tr>
+          </table>
+        </div>
+      </div> <!--Results-->
+    </div> <!--Content-->
+  </div> <!--Main-->
+  </div>
   
 </body>
 </html>
