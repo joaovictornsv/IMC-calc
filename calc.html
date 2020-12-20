@@ -12,15 +12,23 @@
   <title>IMC Calc</title>
 </head>
 <body>
+  <!-- Main -->
   <div class="main">
+
+
+    <!-- Content -->
     <div class="content">
+
+      
+      <!-- Div-Input -->
       <div class="input">
         <img src="./assets/images/logo.svg" alt="IMC Calc">
 
         <p>Preencha os campos abaixo e veja seu resultado</p>
       
-        <form action="" id="form">
 
+        <!-- Form -->
+        <form action="" id="form">
           <input
             type="text" 
             name="peso" 
@@ -28,7 +36,7 @@
             required
             spellcheck="false"
             placeholder="Peso">
-
+          
           <input
             type="text"
             name="altura"
@@ -36,15 +44,17 @@
             required
             spellcheck="false" placeholder="Altura">
 
-
           <button type="submit">
             Calcular
           </button>
 
         </form>
-      </div> <!--Inputs-->
+      </div> <!--Div-Input closure-->
 
+      <!-- Results -->
       <div class="results">
+
+        <!-- Card -->
         <div class="card default">
           <span class="title">Seu IMC</span>
           <span class="score">22.2</span>
@@ -53,6 +63,7 @@
           </span>
         </div>
 
+        <!-- Table -->
         <div class="table">
           <table>
             <tr>
@@ -85,10 +96,11 @@
               <td> >= 40</td>
             </tr>
           </table>
+
         </div>
-      </div> <!--Results-->
-    </div> <!--Content-->
-  </div> <!--Main-->
+      </div> <!--Results closure-->
+    </div> <!--Content closure-->
+  </div> <!--Main closure-->
   </div>
   
 </body>

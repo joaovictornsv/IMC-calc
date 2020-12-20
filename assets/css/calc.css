@@ -29,11 +29,11 @@
   justify-content: space-between;
   align-items: center;
 
-  width: 90%;
+  width: 90vw;
+  max-width: 2800px;
   height: 90vh;
   max-height: 550px;
 }
-
 
 /* Input Div */
 .content .input {
@@ -76,14 +76,15 @@
   width: 350px;
   padding: 15px 20px;
   border-radius: 1.2rem;
-  border: 3px solid  #D9D9D9;
+  border: 2px solid  #D9D9D9;
   outline:none;
   background-color: #F2F2F2;
 }
 
-#form input:focus{
-color: #284B63;
-border-color: #284B63;
+#form input:focus,
+#form input:focus::placeholder{
+  color: #284B63;
+  border-color: #284B63;
 }
 
 #form button {
@@ -106,7 +107,6 @@ border-color: #284B63;
 }
 
 /* Results */
-
 .results {
   display: flex;
   flex-direction: column;
@@ -203,6 +203,7 @@ table tr .level {
   padding-right: 40px;
 }
 
+/* MediaQueries */
 @media(max-height: 530px) {
   .content {
     align-items: flex-start;
