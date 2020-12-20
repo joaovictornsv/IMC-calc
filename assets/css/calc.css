@@ -1,4 +1,5 @@
-div.main {
+/* Main */
+.main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,7 +7,7 @@ div.main {
   min-height: 100vh;
 }
 
-div.main::after {
+.main::after {
   width: 100%;
   height: 100%;
   content: '';
@@ -17,19 +18,43 @@ div.main::after {
   background: url(../images/bg_2.svg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 40vw -20vh;
+  background-position: 40vw;
   background-origin: border-box;
   background-size: 80vw auto;
 }
 
-div.content {
+/* Content */
+.content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  width: 85%;
+  width: 90%;
+  height: 90vh;
+  max-height: 550px;
 }
 
+
+/* Input Div */
+.content .input {
+  max-width: 400px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.content .input img {
+  max-height: 30px;
+  align-self: flex-start;
+}
+
+.content .input p{
+  color: #03C4A1;
+  font-size: clamp(20px, 30px, 36px);
+}
+
+/* Form */
 #form {
   display: flex;
   flex-direction: column;
@@ -49,10 +74,11 @@ div.content {
   color: #495055;
 
   width: 350px;
-  padding: 15px 15px;
-  border-radius: 1rem;
-  border: 2px solid  #D9D9D9;
+  padding: 15px 20px;
+  border-radius: 1.2rem;
+  border: 3px solid  #D9D9D9;
   outline:none;
+  background-color: #F2F2F2;
 }
 
 #form input:focus{
@@ -60,13 +86,13 @@ color: #284B63;
 border-color: #284B63;
 }
 
- button {
+#form button {
   padding: 15px 20px;
   background-color: #03C4A1;
   color: #fff;
   border: none;
   font-size: 1.6rem;
-  border-radius: 12px;
+  border-radius: 1.2rem;
   cursor: pointer;
   margin-top: 25px;
   outline: none;
@@ -77,4 +103,108 @@ border-color: #284B63;
 
 #form button:hover {
   background-color: #05997e;
+}
+
+/* Results */
+
+.results {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  min-height: 550px;
+}
+
+/* Card*/
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #707070;
+  height: 100%;
+  height: 220px;
+  width: 400px;
+  border-radius: 16px;
+  padding-top: 20px;
+  padding-bottom: 35px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, .4);
+}
+
+.card .title {
+  font-size: 22px;
+}
+
+.card .score {
+  font-size: 70px;
+}
+
+.card .status {
+  font-size: 30px;
+}
+
+/* Card Default */
+.default {
+  background: linear-gradient(-45deg, #F2F2F2, #EEEEEE)
+}
+
+/* Card Green */
+.green {
+  background: linear-gradient(-45deg, #D3F5EF, #F9FEFD)
+}
+
+.green .score,
+.green .status {
+  color:#03C4A1
+}
+
+/* Card Yellow */
+.yellow {
+  background: linear-gradient(-45deg, #F9F9C9, #F9FBE1)
+}
+
+.yellow .score,
+.yellow .status {
+  color: #E6BB10;
+}
+
+/* Card Red */
+.red {
+  background: linear-gradient(-45deg, #FCE8E8, #FCF1F1)
+}
+
+.red .score,
+.red .status {
+  color: #FF0500;
+}
+
+
+/* Table */
+
+.table table {
+  background-color: #01B292;
+  font-size: 20px;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  border-radius: 16px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, .2);
+}
+
+table tr td{
+  text-align: right;
+  border-bottom: 3px solid #03C4A1;
+  padding: 4px 0;
+}
+
+table tr .level {
+  text-align: left;
+  margin-right: 30px;
+  padding-right: 40px;
+}
+
+@media(max-height: 530px) {
+  .content {
+    align-items: flex-start;
+  }
 }

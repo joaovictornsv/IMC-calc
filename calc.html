@@ -15,6 +15,8 @@
   <div class="main">
     <div class="content">
       <div class="input">
+        <img src="./assets/images/logo.svg" alt="IMC Calc">
+
         <p>Preencha os campos abaixo e veja seu resultado</p>
       
         <form action="" id="form">
@@ -43,10 +45,10 @@
       </div> <!--Inputs-->
 
       <div class="results">
-        <div class="score">
-          <span className="title">Seu IMC</span>
-          <span className="score">22.2</span>
-          <span className="status">
+        <div class="card default">
+          <span class="title">Seu IMC</span>
+          <span class="score">22.2</span>
+          <span class="status">
             Peso Normal
           </span>
         </div>
@@ -54,32 +56,32 @@
         <div class="table">
           <table>
             <tr>
-              <td>Abaixo do Peso</td>
+              <td class="level">Abaixo do Peso</td>
               <td>< 18.5</td>
             </tr>
 
             <tr>
-              <td>Peso Normal</td>
+              <td class="level">Peso Normal</td>
               <td>18.5 - 24.9</td>
             </tr>
 
             <tr>
-              <td>Sobrepeso</td>
+              <td class="level">Sobrepeso</td>
               <td>25 - 29.9</td>
             </tr>
 
             <tr>
-              <td>Obesidade Grau I</td>
+              <td class="level">Obesidade Grau I</td>
               <td>30 - 34.9</td>
             </tr>
             
             <tr>
-              <td>Obesidade Grau II</td>
+              <td class="level">Obesidade Grau II</td>
               <td>35 - 39.9</td>
             </tr>
 
             <tr>
-              <td>Obesidade Grau III ou Mórbida</td>
+              <td class="level">Obesidade Grau III ou Mórbida</td>
               <td> >= 40</td>
             </tr>
           </table>

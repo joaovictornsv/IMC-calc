@@ -69,7 +69,7 @@ div.content .info .actions button {
   padding: 10px 20px;
   background-color: #03C4A1;
   border: none;
-  font-size: clamp(20px, 30px, 40px);
+  font-size: clamp(20px, 24px, 30px);
   border-radius: 12px;
   cursor: pointer;
   margin-top: 25px;
