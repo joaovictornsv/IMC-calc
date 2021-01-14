@@ -54,6 +54,11 @@
   font-size: clamp(20px, 30px, 36px);
 }
 
+.content .input p a {
+  color: #05997e;
+  font-size: 1rem;
+}
+
 /* Form */
 #form {
   display: flex;
