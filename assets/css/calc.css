@@ -204,6 +204,10 @@ table tr .level {
 @media(max-height: 530px) {
   .content {
     align-items: flex-start;
+    flex-direction: column;
+    margin-top: 30px;
+    overflow: hidden;
+    width: 100vw;
   }
 }
 
