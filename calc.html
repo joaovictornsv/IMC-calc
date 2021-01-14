@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#03C4A1">
+
+  <link rel="shortcut icon" href="./assets/images/favicon.png" />
+  <link rel="stylesheet" href="/assets/css/global.css">
+  <link rel="stylesheet" href="/assets/css/calc.css">
+
+  <title>IMC Calc</title>
+</head>
+<body>
+  <!-- Main -->
+  <div class="main">
+
+
+    <!-- Content -->
+    <div class="content">
+
+      
+      <!-- Div-Input -->
+      <div class="input">
+        <img src="./assets/images/logo.svg" alt="IMC Calc">
+
+        <p>Preencha os campos abaixo e veja seu resultado<br/>
+          <a href="/">Voltar</a>
+        </p>
+      
+
+        <!-- Form -->
+        <form action="" id="form">
+          <input
+            type="text" 
+            name="peso" 
+            id="peso"
+            required
+            spellcheck="false"
+            placeholder="Peso">
+          
+          <input
+            type="text"
+            name="altura"
+            id="altura"
+            required
+            spellcheck="false" placeholder="Altura">
+
+          <button type="submit">
+            Calcular
+          </button>
+
+        </form>
+      </div> <!--Div-Input closure-->
+
+      <!-- Results -->
+      <div class="results">
+
+        <!-- Card -->
+        <div class="card default">
+          <span class="title">Seu IMC</span>
+          <span class="score">22.2</span>
+          <span class="status">
+            Peso Normal
+          </span>
+        </div>
+
+        <!-- Table -->
+        <div class="table">
+          <table>
+            <tr>
+              <td class="level">Abaixo do Peso</td>
+              <td>< 18.5</td>
+            </tr>
+
+            <tr>
+              <td class="level">Peso Normal</td>
+              <td>18.5 - 24.9</td>
+            </tr>
+
+            <tr>
+              <td class="level">Sobrepeso</td>
+              <td>25 - 29.9</td>
+            </tr>
+
+            <tr>
+              <td class="level">Obesidade Grau I</td>
+              <td>30 - 34.9</td>
+            </tr>
+            
+            <tr>
+              <td class="level">Obesidade Grau II</td>
+              <td>35 - 39.9</td>
+            </tr>
+
+            <tr>
+              <td class="level">Obesidade Grau III ou Mórbida</td>
+              <td> >= 40</td>
+            </tr>
+          </table>
+
+        </div>
+      </div> <!--Results closure-->
+
+      
+    </div> <!--Content closure-->
+  </div> <!--Main closure-->
+  </div>
+  
+</body>
+</html>
