@@ -12,3 +12,7 @@
 body, button {
   font-family: 'Montserrat', 'sans-serif';
 }
+
+body {
+  overflow-x: hidden;
+}
