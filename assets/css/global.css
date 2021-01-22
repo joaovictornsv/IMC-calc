@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body, button {
   font-family: 'Montserrat', 'sans-serif';
 }

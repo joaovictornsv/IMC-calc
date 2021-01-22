@@ -89,7 +89,18 @@
   border-color: #284B63;
 }
 
-#form button {
+#form input::-webkit-outer-spin-button,
+#form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+#form input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#form input[type="submit"] {
   padding: 15px 20px;
   background-color: #03C4A1;
   color: #fff;
@@ -104,7 +115,8 @@
   transition: background-color 0.2s;
 }
 
-#form button:hover {
+#form input[type="submit"]:hover,
+#form input[type="submit"]:focus {
   background-color: #05997e;
 }
 
@@ -267,7 +279,7 @@ table tr .level {
     width: 300px;
   }
 
-  #form button {
+  #form input[type="submit"] {
     font-size: 1.2rem;
     width: 300px;
   }

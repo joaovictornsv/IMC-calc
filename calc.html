@@ -32,36 +32,37 @@
         <!-- Form -->
         <form action="" id="form">
           <input
-            type="text" 
+            type="number"
+            max="200"
             name="peso" 
             id="peso"
             required
             spellcheck="false"
-            placeholder="Peso">
+            placeholder="Peso (Kg)">
           
           <input
-            type="text"
+            type="number"
+            max="200"
             name="altura"
             id="altura"
             required
-            spellcheck="false" placeholder="Altura">
+            spellcheck="false"
+            placeholder="Altura (cm)">
 
-          <button type="submit">
-            Calcular
-          </button>
+          <input type="submit" value="Calcular" id="submit"/>
 
         </form>
       </div> <!--Div-Input closure-->
 
       <!-- Results -->
-      <div class="results">
+      <div class="results" id="results">
 
         <!-- Card -->
         <div class="card default">
           <span class="title">Seu IMC</span>
-          <span class="score">22.2</span>
+          <span class="score">-</span>
           <span class="status">
-            Peso Normal
+            
           </span>
         </div>
 
@@ -106,6 +107,6 @@
     </div> <!--Content closure-->
   </div> <!--Main closure-->
   </div>
-  
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>
