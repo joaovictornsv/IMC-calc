@@ -19,9 +19,14 @@ function handleSubmit(e) {
 }
 
 function calculateIMC(weight, height) {
+  if (weight == 0 || height == 0) {
+    return -1;
+  }
+
   heightInMeters = height / 100;
   imcValue = weight / (heightInMeters**2);
   imcValue = imcValue.toFixed(1);
+
   
   return imcValue;
 }
@@ -32,7 +37,8 @@ const status = {
   overweight: 'Sobrepeso',
   obesity1: 'Obesidade Grau I',
   obesity2: 'Obesidade Grau II',
-  obesity3: 'Obesidade Grau III'
+  obesity3: 'Obesidade Grau III',
+  invalid: 'Dados inválidos'
 }
 
 function setResults(imc) {
@@ -53,6 +59,9 @@ function setResults(imc) {
 }
 
 function getStatus(imc) {
+  if (imc == -1) {
+    return [status.invalid, '']
+  }
   if(imc < 18.5) {
     return [status.underWeight, 'yellow'];
   }
@@ -74,5 +83,10 @@ function getStatus(imc) {
 }
 
 function setCardColor(color) {
-  card.setAttribute('class', `card ${color}`);
+  if (color) {
+    card.className = `card ${color}`;
+  }
+  else {
+    card.className = 'card default'
+  }
 }
