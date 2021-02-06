@@ -19,8 +19,11 @@ function handleSubmit(e) {
 }
 
 function calculateIMC(weight, height) {
-  if (weight == 0 || height == 0) {
+  if (weight <= 0) {
     return -1;
+  }
+  if (height <= 0) {
+    return -2;
   }
 
   heightInMeters = height / 100;
@@ -38,7 +41,8 @@ const status = {
   obesity1: 'Obesidade Grau I',
   obesity2: 'Obesidade Grau II',
   obesity3: 'Obesidade Grau III',
-  invalid: 'Dados inválidos'
+  invalidWeight: 'Peso inválido',
+  invalidHeight: 'Altura Inválida'
 }
 
 function setResults(imc) {
@@ -60,7 +64,10 @@ function setResults(imc) {
 
 function getStatus(imc) {
   if (imc == -1) {
-    return [status.invalid, '']
+    return [status.invalidWeight, '']
+  }
+  if (imc == -2)  {
+    return [status.invalidHeight, '']
   }
   if(imc < 18.5) {
     return [status.underWeight, 'yellow'];
