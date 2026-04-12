@@ -1,8 +1,4 @@
 <div  align="center">
-<!-- Top Image and Title -->
-<h1>
-<img  src="./assets/images/logo.svg"  width="300px"><br/>
-</h1>
 <!-- Subtitle/Description -->
 <h4>IMC Calc é uma aplicação responsável por calcular o Indíce de Massa Corpórea do usuário, apresentando os resultados de forma amigável.</h4>
 <p>
@@ -19,9 +15,6 @@
 <a  href=#telescope-tecnologias>Technologies</a>&nbsp;&nbsp;|&nbsp;&nbsp;
 <a href="#information_source-how-to-use">How To Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#gift-contributing">Contributing</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-<img  width="100%"  src="https://i.imgur.com/ScNyT7d.png">
-<img  width="100%"  src="https://i.imgur.com/kfoftIU.png">
 </div>
 
 ---
